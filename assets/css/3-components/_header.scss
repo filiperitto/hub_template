@@ -1,0 +1,10 @@
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    .logo{
+        margin-left: calc(70% + 20px);
+        margin-top: 20px;
+        position: absolute;
+    }
+}
