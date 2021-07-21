@@ -6,5 +6,13 @@ header{
         margin-left: calc(70% + 20px);
         margin-top: 20px;
         position: absolute;
+        width: calc(23% - 10px);
+        max-width: 120px;
+        @include respond-to-min(800){
+            width: calc(23% - 10px);
+        }
+        img{
+            width: 100%;
+        }
     }
 }

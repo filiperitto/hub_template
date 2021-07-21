@@ -319,49 +319,64 @@ button{
     border: none;
 }
 
+.title-box{
+    h1{
+        font-size: 54px;
+        padding: 0;
+        margin: 0;
+        color: $dark-green;
+        padding: 5px;
+        position: relative;
+        display: inline-block;
 
-.btn-wrap {
+        &:before {
+            content: '';
+            background: $light-color;
+            z-index: -1;
+            width: 100%;
+            height: 55%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(5%, 80%);
+        }
+    }
+}
+
+.container-style{
+    background: $light-color;
+    padding: 20px 30px;
+    position: relative;
+    @include respond-to-min(1000){
+        padding: 20px 80px;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 15px;
+        left: 15px;
+        border: 3px solid $light-color;
+        z-index: -1;
+    }
+    
+    h1{
+        font-size: 33px;
+        color: $dark-green;
+        @include respond-to-min(1150){
+            font-size: 54px;
+        }
+    }
+    p{
+        padding-left: 0;
+        color: $dark-green;
+        @include respond-to-min(1150){
+            padding-left: 50px;
+        }
+    }
+}
+.flex-align{
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    margin-top: 45px;
-    &.right{
-        flex-direction: row-reverse;
-    }
-    &.left{
-        flex-direction: row;
-        transform: translateX(-9px);
-        .btn-cta{
-            flex-direction: row-reverse;
-        }
-    }
-    .btn-cta{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        span{
-            font-family: Roboto;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 12px;
-            line-height: 35px;
-            text-transform: uppercase;
-            /* identical to box height, or 533% */
-
-            text-align: right;
-            letter-spacing: 0.31em;
-
-            color: #0D262D;
-        }
-        svg{
-            transition: transform .2s ease-in-out;
-            transform: translateY(10px);
-        }
-        &:hover{
-            svg{
-                transform: translateY(20px);
-            }
-        }
-    }
-
+    align-items: center;
 }

@@ -1,0 +1,22 @@
+.moduleBanners{
+    padding: 80px 0;
+    background-size: cover !important;
+    background-position: center !important;
+    .cont{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .left-box{
+            width: 100%;
+            @include respond-to-min(1150){
+                width: 40%;
+            }
+        }
+        .right-box{
+            width: 100%;
+            @include respond-to-min(1150){
+                width: 60%;
+            }
+        }
+    }
+}
