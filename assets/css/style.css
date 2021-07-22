@@ -876,14 +876,9 @@ button {
 
 .container-style {
   background: #F9F0DF;
-  padding: 20px 30px;
   position: relative;
-}
-
-@media only screen and (min-width: 1000px) {
-  .container-style {
-    padding: 20px 80px;
-  }
+  color: #2A3C2C;
+  padding: 20px;
 }
 
 .container-style:after {
@@ -895,28 +890,6 @@ button {
   left: 15px;
   border: 3px solid #F9F0DF;
   z-index: -1;
-}
-
-.container-style h1 {
-  font-size: 33px;
-  color: #2A3C2C;
-}
-
-@media only screen and (min-width: 1150px) {
-  .container-style h1 {
-    font-size: 54px;
-  }
-}
-
-.container-style p {
-  padding-left: 0;
-  color: #2A3C2C;
-}
-
-@media only screen and (min-width: 1150px) {
-  .container-style p {
-    padding-left: 50px;
-  }
 }
 
 .flex-align {
@@ -932,14 +905,15 @@ header {
   width: 100%;
   height: auto;
   position: relative;
+  padding: 20px 0;
 }
 
 header .logo {
   margin-left: calc(70% + 20px);
-  margin-top: 20px;
-  position: absolute;
+  margin-top: 0;
   width: calc(23% - 10px);
   max-width: 120px;
+  display: block;
 }
 
 @media only screen and (min-width: 800px) {
@@ -948,8 +922,54 @@ header .logo {
   }
 }
 
-header .logo img {
+header .logo svg {
   width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+header .bg {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2A3C2C;
+  z-index: 0;
+}
+
+.int header {
+  padding: 0;
+}
+
+.int header .wrap {
+  padding: 20px 0;
+  background-color: #2A3C2C;
+  border-right: 20px solid #ADB5A5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.int header .logo {
+  margin-right: 20px;
+}
+
+.int header .logo svg {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+
+.int header .logo svg path {
+  fill: #ADB5A5;
+}
+
+.int header .bg {
+  width: 80%;
 }
 
 .btn {
@@ -1113,6 +1133,37 @@ MENU HAMBUGER ANIMATION
           transform: rotate(-35deg);
 }
 
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 17px 8px;
+  line-height: 48px;
+  background: #F9F0DF;
+  color: #2A3C2C;
+  border: 0;
+  border-bottom: 2px solid #2A3C2C;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+  outline: 0;
+}
+
+footer {
+  background: #2A3C2C;
+  color: #ADB5A5;
+  padding: 15px 0;
+}
+
+footer .copy-box {
+  text-align: center;
+}
+
 .moduleHero {
   width: 100%;
   height: auto;
@@ -1126,19 +1177,20 @@ MENU HAMBUGER ANIMATION
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 75px;
-  padding-bottom: 175px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 @media only screen and (min-width: 700px) {
   .moduleHero {
-    padding-top: 130px;
+    padding-top: 40px;
+    padding-bottom: 175px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .moduleHero {
-    padding: 120px 0 170px;
+    padding: 30px 0 170px;
   }
 }
 
@@ -1445,6 +1497,73 @@ MENU HAMBUGER ANIMATION
   transition: all 0.3s ease-in-out;
 }
 
+.moduleSingle .hero-single {
+  width: 100%;
+  padding: 0;
+  margin: 50px 0;
+}
+
+.moduleSingle .hero-single:after {
+  border-color: #2A3C2C;
+}
+
+.moduleSingle .hero-single img {
+  width: 100%;
+  height: auto;
+}
+
+.moduleSingle .loop-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.moduleSingle .loop-blog .post-container {
+  width: calc(65% - 35px);
+  margin-right: 35px;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .header-post {
+  width: 100%;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .header-post .info-header {
+  width: 100%;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .header-post .info-header p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ADB5A5;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .header-post h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 66px;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .header-post h1 mark {
+  color: #2A3C2C;
+  background-color: transparent;
+  padding: 6px 5px;
+  background-image: url(../img/mark-full.png);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: auto 57%;
+}
+
+.moduleSingle .loop-blog .sidebar-container {
+  width: 35%;
+  position: relative;
+}
+
 .moduleBlog .loop-blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1472,6 +1591,33 @@ MENU HAMBUGER ANIMATION
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 20px 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .moduleBanners .cont {
+    padding: 20px 80px;
+  }
+}
+
+.moduleBanners .cont h1 {
+  font-size: 33px;
+}
+
+@media only screen and (min-width: 1150px) {
+  .moduleBanners .cont h1 {
+    font-size: 54px;
+  }
+}
+
+.moduleBanners .cont p {
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 1150px) {
+  .moduleBanners .cont p {
+    padding-left: 50px;
+  }
 }
 
 .moduleBanners .cont .left-box {
@@ -1492,5 +1638,60 @@ MENU HAMBUGER ANIMATION
   .moduleBanners .cont .right-box {
     width: 60%;
   }
+}
+
+.moduleBanners .cont-form {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .moduleBanners .cont-form {
+    padding: 20px 80px;
+  }
+}
+
+.moduleBanners .cont-form .wrap-form h1 {
+  font-size: 29px;
+}
+
+.moduleBanners .cont-form .wrap-form form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.moduleBanners .cont-form .wrap-form form .input-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleBanners .cont-form .wrap-form form .input-box {
+    width: 40%;
+    padding-right: 20px;
+  }
+}
+
+.moduleBanners .cont-form .wrap-form form .button-box {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleBanners .cont-form .wrap-form form .button-box {
+    width: 20%;
+  }
+}
+
+.moduleBanners .cont-form .wrap-form form .button-box button {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

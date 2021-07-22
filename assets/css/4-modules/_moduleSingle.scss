@@ -1,0 +1,59 @@
+.moduleSingle{
+    .hero-single{
+        width: 100%;
+        padding: 0;
+        margin: 50px 0;
+        &:after{
+            border-color: $dark-green;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .loop-blog{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 50px;
+        .post-container{
+            width: calc(65% - 35px);
+            margin-right: 35px;
+            .content-inter{
+                .header-post{
+                    width: 100%;
+                    .info-header{
+                        width: 100%;
+                        p{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: $light-green;
+                        }
+                    }
+                    h1{
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 54px;
+                        line-height: 66px;
+                        
+                       
+                        mark{
+                            color: $dark-green;
+                            background-color: transparent;
+                            padding: 6px 5px;
+                            background-image: url(../img/mark-full.png);
+                            background-position: left bottom;
+                            background-repeat: repeat-x;
+                            background-size: auto 57%;
+                        }
+                    }
+                }
+            }
+        }
+        .sidebar-container{
+            width: 35%;
+            position: relative;
+        }
+    }
+}

@@ -345,11 +345,9 @@ button{
 
 .container-style{
     background: $light-color;
-    padding: 20px 30px;
     position: relative;
-    @include respond-to-min(1000){
-        padding: 20px 80px;
-    }
+    color: $dark-green;
+    padding: 20px;
     &:after{
         content: '';
         position: absolute;
@@ -359,21 +357,6 @@ button{
         left: 15px;
         border: 3px solid $light-color;
         z-index: -1;
-    }
-    
-    h1{
-        font-size: 33px;
-        color: $dark-green;
-        @include respond-to-min(1150){
-            font-size: 54px;
-        }
-    }
-    p{
-        padding-left: 0;
-        color: $dark-green;
-        @include respond-to-min(1150){
-            padding-left: 50px;
-        }
     }
 }
 .flex-align{
