@@ -29,7 +29,6 @@
         transition: all 0.3s ease-in-out;
         z-index: -1;
     }
-
     &:hover{
         border: 2px solid $dark-green;
         &:before {
@@ -43,6 +42,33 @@
             top: 0;
             left: 0;
             z-index: -1;
+        }
+    }
+}
+
+.btn{
+    &.light-color{
+        background: $light-color;
+        color: $dark-green;
+        padding: 20px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22.9558px;
+        line-height: 28px;
+        mark{
+            color: $dark-green;
+            background-color: transparent;
+            padding: 6px 5px;
+            background-image: url(../img/mark-full.png);
+            background-position: left bottom;
+            background-repeat: repeat-x;
+            background-size: auto 57%;
+        }
+        &:hover{
+            border-color: $light-color;
+        }
+        &:before{
+            border-color: $light-color;
         }
     }
 }

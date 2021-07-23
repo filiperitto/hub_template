@@ -4,14 +4,15 @@ header{
     position: relative;
     padding: 20px 0;
     .logo{
-        margin-left: calc(70% + 20px);
+        margin-left: calc(58.6%);
         margin-top: 0;
         //position: absolute;
         width: calc(23% - 10px);
-        max-width: 120px;
+        max-width: 281px;
         display: block;
-        @include respond-to-min(800){
+        @include respond-to-min(1200){
             width: calc(23% - 10px);
+            margin-left: calc(70% - 150px);
         }
         svg{
             width: 100%;
