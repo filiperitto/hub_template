@@ -67,11 +67,11 @@
                     .info-header{
                         width: 100%;
                         p{
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: $light-green;
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: $light-green;
                         }
                     }
                     h1{
@@ -98,9 +98,10 @@
                     }
                 }
                 .content-post-inner{
-                    p{
+                    p,
+                    li{
                         font-size: 15px;
-                        line-height: 18px;
+                        line-height: 21px;
                     }
                 }
             }
@@ -246,6 +247,28 @@
                     }
                 }
 
+            }
+        }
+    }
+}
+
+.page{
+    .moduleSingle{
+        .loop-blog{
+            .post-container{
+                width: 100%;
+                .content-inter{
+                    @include respond-to-min(800){
+                        padding: 20px 40px;
+                    }
+                    .content-post-inner{
+                        p,
+                        li{
+                            font-size: 15px;
+                            line-height: 25px;
+                        }
+                    }
+                }
             }
         }
     }

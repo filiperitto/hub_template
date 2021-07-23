@@ -1648,9 +1648,10 @@ footer .copy-box {
   background-size: auto 57%;
 }
 
-.moduleSingle .loop-blog .post-container .content-inter .content-post-inner p {
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner p,
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner li {
   font-size: 15px;
-  line-height: 18px;
+  line-height: 21px;
 }
 
 .moduleSingle .loop-blog .post-container .btn-box-singlepost {
@@ -1808,6 +1809,22 @@ footer .copy-box {
 
 .moduleSingle .loop-blog .sidebar-container .widget-box.side-banner img {
   width: 100%;
+}
+
+.page .moduleSingle .loop-blog .post-container {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .page .moduleSingle .loop-blog .post-container .content-inter {
+    padding: 20px 40px;
+  }
+}
+
+.page .moduleSingle .loop-blog .post-container .content-inter .content-post-inner p,
+.page .moduleSingle .loop-blog .post-container .content-inter .content-post-inner li {
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .moduleBlog .loop-blog {
