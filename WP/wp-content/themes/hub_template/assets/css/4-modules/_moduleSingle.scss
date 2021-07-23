@@ -103,6 +103,28 @@
                         font-size: 15px;
                         line-height: 21px;
                     }
+                    img{
+                        max-width: 100%;
+                    }
+                    .align-center{
+                        clear: both;
+                        display: block;
+                        float: none;
+                        margin-right: auto;
+                        margin-left: auto;
+                        text-align: center;
+
+                    }
+                    .alignleft{
+                        float: left;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                    }
+                    .alignright{
+                        float: right;
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                    }
                 }
             }
             .btn-box-singlepost{

@@ -1654,6 +1654,31 @@ footer .copy-box {
   line-height: 21px;
 }
 
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner img {
+  max-width: 100%;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner .align-center {
+  clear: both;
+  display: block;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner .alignleft {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.moduleSingle .loop-blog .post-container .content-inter .content-post-inner .alignright {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 .moduleSingle .loop-blog .post-container .btn-box-singlepost {
   width: 100%;
   display: -webkit-box;

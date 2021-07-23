@@ -1,62 +1,4 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="pt-br">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <!-- Meta para HTML puro -->
-    <title>Hub Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
-    <meta name="description" content="Isso é um template feito por FilipeRitto :)">
-    <meta name="keywords" content="Sample, HTML5, CSS3">
-    
-    <!-- Meta para Publicação do Facebook -->
-    <meta property="og:locale" content="pt-br">
-    <meta property="og:url" content="https://filiperitto.com.br/_projetos/sample/">
-    <meta property="og:title" content="sampleTemplate">
-    <meta property="og:site_name" content="sampleTemplate">
-    <meta property="og:description" content="Isso é um template feito por FilipeRitto :)">
-    <meta property="og:image" content="https://filiperitto.com.br/_projetos/ola_podcast/assets/img/placeholder-facebook-meta.jpg">
-    <meta property="og:type" content="website">
-
-    <!-- Meta para Publicação do Twitter -->
-    <meta name="twitter:site" content="@sampleTemplate">
-    <meta name="twitter:title" content="sampleTemplate">
-    <meta name="twitter:description" content="Isso é um template feito por FilipeRitto :)">
-    <meta name="twitter:url" content="https://filiperitto.com.br/_projetos/sample/">
-    <meta name="twitter:image" content="https://filiperitto.com.br/_projetos/ola_podcast/assets/img/placeholder-facebook-meta.jpg">
-    <meta name="twitter:card" content="summary">
-
-
-    <link rel="canonical" href="https://filiperitto.com.br/_projetos/sample/"/> <!-- Tag exclusiva da Home -->
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Script para gerar searchbox na pesquisa do google https://developers.google.com/search/docs/guides/sd-policies#nesting
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": "https://www.example.com/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://query.example.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-    </script> -->
-
-</head>
+<?php get_header(); ?>
 
 <body id="body">
     <!--[if lt IE 8]>
@@ -216,41 +158,7 @@
             </div>
         </section>
         
-        <section class="moduleBanners" style="background: url(./assets/img/bg-footer.jpg) no-repeat;">
-            <div class="wrap grid">
-
-                <div class="cont-form container-style">
-                    <div class="wrap-form">
-                        <h1>
-                            Fique por dentro da siSou
-                        </h1>
-                        <form>
-                            <div class="input-box">
-                                <input type="text" placeholder="Seu nome..." value="">
-                            </div>
-                            <div class="input-box">
-                                <input type="email" placeholder="Seu email..." value="">
-                            </div>
-                            <div class="button-box">
-                                <button class="btn">Inscreva-se</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
-
-        <footer>
-            <div class="copy-box">
-                <div class="wrap">
-                    <p>Copyright © 2020 Sample Theme. Todos os direitos reservados.</p>
-                </div>
-            </div>
-
-        </footer>
+        <?php get_footer(); ?>
     </div>
 
 </body>
