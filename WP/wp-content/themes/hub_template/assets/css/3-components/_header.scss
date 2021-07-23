@@ -1,0 +1,58 @@
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 20px 0;
+    .logo{
+        margin-left: calc(58.6%);
+        margin-top: 0;
+        //position: absolute;
+        width: calc(23% - 10px);
+        max-width: 281px;
+        display: block;
+        @include respond-to-min(1200){
+            width: calc(23% - 10px);
+            margin-left: calc(70% - 150px);
+        }
+        svg{
+            width: 100%;
+            z-index: 1;
+            position: relative;
+        }
+    }
+    .bg{
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #2A3C2C;
+        z-index: 0;
+    }
+}
+.int{
+    header{
+        padding: 0;
+        .wrap{
+            padding: 20px 0;
+            background-color: $dark-green;
+            border-right: 20px solid $light-green;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .logo{
+            margin-right: 20px;
+            svg{
+                width: 100%;
+                z-index: 1;
+                position: relative;
+                path{
+                    fill: $light-green;
+                }
+            }
+        }
+        .bg{
+            width: 80%;
+        }
+    }
+}

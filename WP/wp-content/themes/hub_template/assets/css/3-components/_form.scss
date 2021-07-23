@@ -1,0 +1,23 @@
+form{
+    input[type="text"],
+    input[type="email"]{
+        width: 100%;
+        padding: 17px 8px;
+        line-height: 48px;
+        background: $light-color;
+        color: $dark-green;
+        border: 0;
+        border-bottom: 2px solid $dark-green;
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+
+        &:focus {
+            outline: 0;
+        }
+    }
+}
