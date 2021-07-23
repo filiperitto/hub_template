@@ -109,3 +109,4 @@ WP/wp-activate.php
 WP/readme.html
 WP/license.txt
 WP/index.php
+!WP/wp-content/themes/hub_template
