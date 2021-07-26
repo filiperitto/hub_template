@@ -160,7 +160,7 @@ if( function_exists('acf_add_options_page') ) {
   'menu_title'	=> 'Home',
   'parent_slug'	=> 'theme-settings',
   'capability'	=> 'edit_posts',
-      'parent_slug'   => 'sisou',
+      'parent_slug'   => 'hub_template',
   ));
     
 }

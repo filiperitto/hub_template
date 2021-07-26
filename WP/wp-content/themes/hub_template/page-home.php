@@ -9,17 +9,24 @@
 
         <section class="moduleHero">
             <div class="wrap grid">
-                <div class="col50">
-                    <h3>Alguma Tag</h3>
-                    <h1>Conheça o mundo da alimentação</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</h2>
-                    <a href="javascript:(0)" class="btn">CTA</a>
-                </div>
-                <div class="col50">
-                    <div class="wrap-img">
-                        <img alt="" src="<?php echo PW_THEME_URL; ?>assets/img/placeholder-hero.png">
-                    </div>
-                </div>
+                <?php if(get_field('hero_home', 'option')): $i = 0; ?>
+                    <?php while(has_sub_field('hero_home', 'option')): $i++; ?>
+                        <div class="col50">
+                            <?php the_sub_field('texto'); ?>
+
+                            <?php while(has_sub_field('link_cta', 'option')): $i++; ?>
+                                <a href="<?php the_sub_field('link'); ?>" class="btn"><?php the_sub_field('nome'); ?></a>
+                            <?php endwhile; ?>
+                            
+                        </div>
+                        <div class="col50">
+                            <div class="wrap-img">
+                                <img alt="" src="<?php the_sub_field('imagem'); ?>">
+                            </div>
+                        </div>
+
+                    <?php endwhile; ?>
+                <?php endif; ?>
 
             </div>
             <div class="bg"></div>
@@ -53,14 +60,20 @@
             <div class="wrap grid">
 
                 <div class="container-style cont">
-                    <div class="left-box">
-                        <h1>
-                            O Novo Jeito de ser Seguro
-                        </h1>
-                    </div>
-                    <div class="right-box">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.</p>
-                    </div>
+                <?php if(get_field('banner_home', 'option')): $i = 0; ?>
+                    <?php while(has_sub_field('banner_home', 'option')): $i++; ?>
+
+                        <div class="left-box">
+                            <h1>
+                                <?php the_sub_field('texto_esquerdo'); ?>
+                            </h1>
+                        </div>
+                        <div class="right-box">
+                            <p><?php the_sub_field('texto_direito'); ?></p>
+                        </div>
+
+                    <?php endwhile; ?>
+                <?php endif; ?>
                 </div>
 
             </div>

@@ -35,8 +35,9 @@
                         <p>Nada encontrado :/</p>
                         <?php endif; ?>
 
-                        <div class="btn-box-singlepost">
+                        <div class="btn-box-singlepost int">
                             <?php wp_pagenavi(); ?>
+                            <img alt="" src="<?php echo PW_THEME_URL; ?>assets/img/arrow-right.svg">
                         </div>
                     </div>
                      
